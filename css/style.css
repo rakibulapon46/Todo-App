@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  min-height: 80vh;
+  width: 50%;
+  overflow: scroll;
+  border-radius: 0.6rem;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  background-color: orange;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#addTodoButton {
+  width: 19%;
+}
+
+.li-style {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+
+.li-style:hover {
+  background-color: #111;
+}
+
+.bg-success {
+  background-color: #ddffdd;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  color: black;
+  font-weight: 700;
+  border-left: 6px solid #04aa6d;
+}
+
+.bg-danger {
+  background-color: #ffdddd;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  color: black;
+  font-weight: 700;
+  border-left: 6px solid #f44336;
+}
+
+@media (min-width: 280px) and (max-width: 319px) {
+  .container {
+    padding: 0.25rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input {
+    width: 68%;
+  }
+
+  #addTodoButton {
+    width: 30%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .container {
+    padding: 0.25rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input {
+    width: 73%;
+  }
+
+  #addTodoButton {
+    width: 25%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 411px) {
+  .container {
+    padding: 0.4rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input {
+    width: 75%;
+  }
+
+  #addTodoButton {
+    width: 23%;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 575px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input {
+    width: 75%;
+  }
+
+  #addTodoButton {
+    width: 23%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input {
+    width: 79%;
+  }
+
+  #addTodoButton {
+    width: 20%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .card {
+    width: 80%;
+  }
+}
