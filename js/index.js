@@ -12,7 +12,7 @@ const showMessage = (text, status) => {
   setTimeout(() => {
     messageElement.textContent = "";
     messageElement.classList.remove(`bg-${status}`);
-  }, 1500);
+  }, 3000);
 };
 
 //create todo
